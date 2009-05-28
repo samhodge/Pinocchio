@@ -9,4 +9,4 @@ stdfx.o : stdafx.cpp stdafx.h
 AttachWeights.o : AttachWeights.cpp stdafx.h
 	$(CC) $(CCFLAGS) AttachWeights.cpp
 clean :
-	rm attachWeights stdafx.o AttachWeights.o
+	rm AttachWeights.exe stdafx.o AttachWeights.o
