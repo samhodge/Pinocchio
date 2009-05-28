@@ -8,10 +8,10 @@ graphutils.o intersector.o matrix.o skeleton.o embedding.o \
 pinocchioApi.o refinement.o
 
 libpinocchio.a: $(OBJECTS)
-ar rcs $@ $^
+	ar rcs $@ $^
 
 .cpp.o:
-$(CC) $(CCFLAGS) $<
+	$(CC) $(CCFLAGS) $<
 
 
 #do a makedepend and remove all the external dependencies from the makefile
