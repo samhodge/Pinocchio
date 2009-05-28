@@ -8,13 +8,12 @@ all:
 depend:
 	cd Pinocchio && $(MAKE) depend
 	#cd DemoUI && $(MAKE) depend
-	cd AttachWeights && $(MAKE)
+	cd AttachWeights && $(MAKE) depend
 
 clean:
 	cd Pinocchio && $(MAKE) clean
 	#cd DemoUI && $(MAKE) clean
-	cd AttachWeights && $(MAKE)
-
+	cd AttachWeights && $(MAKE) clean
 
 
 # DO NOT DELETE
