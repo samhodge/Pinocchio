@@ -17,20 +17,20 @@ libpinocchio.a: $(OBJECTS)
 #do a makedepend and remove all the external dependencies from the makefile
 #works on my system, no one else should need to do it.
 depend:
-makedepend *.cpp > /dev/null >& 1
-perl -pi -e 's/\.c\.o/\.o/' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
-perl -pi -e 's/^[a-zA-Z].*\.o\:\s*$$//' Makefile
+	makedepend *.cpp > /dev/null >& 1
+	perl -pi -e 's/\.c\.o/\.o/' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/\/u[Ss]r[a-zA-Z0-9\+\-\/\.\_]*//' Makefile
+	perl -pi -e 's/^[a-zA-Z].*\.o\:\s*$$//' Makefile
 
 clean:
-rm -f $(OBJECTS) libpinocchio.a *~ core gmon.out *.bak
+	rm -f $(OBJECTS) libpinocchio.a *~ core gmon.out *.bak
 
 
 # DO NOT DELETE
